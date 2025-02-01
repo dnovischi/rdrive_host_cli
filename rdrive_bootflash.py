@@ -848,9 +848,9 @@ def main():
         description='This tool is used to program the RDrive MCU with its embedded application.',
         formatter_class=argparse.RawTextHelpFormatter,
         epilog='Usage examples:\n'  
-        './rdrive_programer_cli.py -p /dev/ttyUSB0 -b 115200 -f file.hex\n'
-        './rdrive_programer_cli.py -p /dev/ttyS0 -b 115200 -v\n'
-        './rdrive_programer_cli.py -p COM1 -b 115200 -e\n'        
+        './rdrive_bootflash.py -p /dev/ttyUSB0 -b 115200 -f file.hex\n'
+        './rdrive_bootflash.py -p /dev/ttyS0 -b 115200 -v\n'
+        './rdrive_bootflash.py -p COM1 -b 115200 -e\n'        
     )
     parser.add_argument('-p', '--port', required=True, help='Serial port to use')
     parser.add_argument('-b', '--baudrate', type=int, required=True, help='Baudrate for serial communication')
